@@ -10,7 +10,7 @@
   formData.append('file', fileInput.files[0]);
   formData.append('type', type);
 
-  const res = await fetch('${API_BASE}/api/convert', {
+  const res = await fetch(`${API_BASE}/api/convert`, {
     method: 'POST',
     body: formData
   });
