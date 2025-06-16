@@ -125,4 +125,16 @@ select:hover {
     height: 180px;
   }
 }
+#spinner {
+  color: #555;
+  font-size: 16px;
+  font-style: italic;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
 
