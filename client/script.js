@@ -1,4 +1,5 @@
-async function convert() {
+ const API_BASE = 'https://documate-backend.onrender.com';
+  async function convert() {
   const fileInput = document.getElementById('file');
   const type = document.getElementById('type').value;
   const output = document.getElementById('output');
