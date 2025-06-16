@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DocuMate | Document Converter + Voice Reader</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 <span class="brand">DocuMate</span></h1>
+    <p class="tagline">Convert PDFs, Word files & Listen to Content Easily!</p>
+
+    <div class="form-group">
+      <label for="file">📂 Upload Your Document</label>
+      <input type="file" id="file" />
+    </div>
+
+    <div class="form-group">
+      <label for="type">🔄 Select Conversion Type</label>
+      <select id="type">
+        <option value="pdf-text">📕 PDF ➜ Text</option>
+        <option value="word-text">📘 Word ➜ Text</option>
+        <option value="word-pdf">📘 Word ➜ PDF</option>
+        <option value="pdf-word">📕 PDF ➜ Word (coming soon)</option>
+      </select>
+    </div>
+
+    <button class="convert-btn" onclick="convert()">⚙️ Convert</button>
+
+    <pre id="output" class="output-box">📝 Converted content will appear here...</pre>
+
+    <button class="speak-btn" onclick="speak()">🔊 Listen to Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
